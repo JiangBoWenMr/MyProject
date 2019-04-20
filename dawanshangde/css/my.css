@@ -1,0 +1,68 @@
+.mui-content {
+	width: 100%;
+	height: 2.1rem;
+	background: #ffdb25;
+	text-decoration: none;
+}
+.mui-content .mui-inner {
+	height: .55rem;
+	width: .55rem;
+	margin-top: .4rem ;
+	margin-left: 1.6rem;
+}
+.mui-content .mui-inner .img-00 {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 2px solid #FFFFFF;
+}
+.mui-content .mui-inner01{
+	width: 1.30rem;
+	height:.16rem;
+	margin:  0 auto;
+	padding-top: .2rem;
+}
+.mui-content .mui-inner01 span{
+	color: #2a2a2a;
+	font-size:.16rem;
+	line-height:.16rem;
+	
+}
+.mui-content .mui-inner01 .img-01{
+	height:.15rem;
+	width:.17rem;
+	padding-left: .05rem;
+}
+.mui-table-view .mui-table-view-cell .mui-navigate-right img{
+	width: .36rem;
+	height: .25rem;
+	margin:  0 auto;
+}
+.mui-table-view .mui-table-view-cell .mui-navigate-right label{
+  font-size: .16rem;
+  color: #2A2A2A;
+  text-align: center;
+}
+.mui-bar-1 {
+	position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    height: .4rem;
+    padding-right: .1rem;
+    padding-left: .1rem;
+    padding-top: .1rem;
+    border-bottom: 0;
+	background: #FFFFFF;
+}
+.mui-bar-1 .mui-tab-item img{
+	width:.25rem;
+	height:.22rem;
+}
+.mui-bar-1 .mui-tab-label{
+	font-size: 14px;
+    color: #8f8f94;
+}
+:hover{
+	text-decoration: none;
+}

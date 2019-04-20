@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>农庄首页</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>   
+    <link rel="stylesheet" type="text/css" href="css/nongzhuang1.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+     <script type="text/javascript">
+			var html =document.getElementsByTagName('html')[0];
+		    html.style.fontSize = html.clientWidth /3.75 + "px";
+	</script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">返回</a>
+		    <h1 class="mui-title">农庄</h1>
+		    <p class="my_p">...</p>
+    </header>
+    <div class="mui-content">
+    	<!--输入框-->
+        <div class="sousuo">
+        	<div class="mui-input-row mui-search sou1">
+		        <a href="yemian/sousuo2.html"><input type="search" style="background: white;" class="mui-input-clear inp" placeholder="请输入农庄名称或特产名称"></a>
+		    </div>
+        </div>
+        <!--轮播图开始-->
+        <div id="slider" class="mui-slider" >
+	      <div class="mui-slider-group mui-slider-loop">
+	        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	        <div class="mui-slider-item mui-slider-item-duplicate">
+	          <a href="#">
+	            <img src="img/5a2bb24f3ba71.png">
+	          </a>
+	        </div>
+	        <!-- 第一张 -->
+	        <div class="mui-slider-item">
+	          <a href="#">
+	            <img src="img/nongzhuang_02.png">
+	          </a>
+	        </div>
+	        <!-- 第二张 -->
+	        <div class="mui-slider-item">
+	          <a href="#">
+	            <img src="img/5a5f109d6c5bd.jpg">
+	          </a>
+	        </div>
+	        <!-- 第三张 -->
+	        <div class="mui-slider-item">
+	          <a href="#">
+	            <img src="img/3.png">
+	          </a>
+	        </div>
+	        <!-- 第四张 -->
+	        <div class="mui-slider-item">
+	          <a href="#">
+	            <img src="img/2.png">
+	          </a>
+	        </div>
+	        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	        <div class="mui-slider-item mui-slider-item-duplicate">
+	          <a href="#">
+	            <img src="img/nongzhuang_02.png">
+	          </a>
+	        </div>
+	      </div>
+	      <div class="mui-slider-indicator">
+	        <div class="mui-indicator mui-active"></div>
+	        <div class="mui-indicator"></div>
+	        <div class="mui-indicator"></div>
+	        <div class="mui-indicator"></div>
+	      </div>
+	    </div>
+	</div>
+	    <!--轮播图结束-->
+	    <!--九宫格开始-->
+	    <ul class="mui-table-view mui-grid-view mui-grid-9">
+	    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	        <a href="yemian/shouyetuijian4.html">
+	            <img class="tupian" src="img/nongzhuang_05.png"/>
+	            <div class="mui-media-body">推荐</div>
+	        </a>
+	    </li>
+	    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	        <a href="yemian/baoming27.html">
+	            <img class="tupian" src="img/nongzhuang_07.png"/>
+	            <div class="mui-media-body">户外</div>
+	        </a>
+	    </li>
+	    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	        <a href="#">
+	            <img class="tupian" src="img/nongzhuang_09.png"/>
+	            <div class="mui-media-body">好物</div>
+	        </a>
+	    </li>
+	    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	        <a href="#">
+	        	<img class="tupian" src="img/nongzhuang_11.png"/>
+	            <div class="mui-media-body">美食</div>
+	        </a>
+	    </li>
+	    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	        <a href="yemian/shisu25.html">
+	        	<img class="tupian" src="img/nongzhuang_12.png"/>
+	            <div class="mui-media-body">露营</div>
+	        </a>
+	    </li>
+	    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	        <a href="yemian/nongzhuangxiangqing06.html">
+	        	<img class="tupian" src="img/nongzhuang_13.png"/>
+	            <div class="mui-media-body">采摘</div>
+	        </a>
+	    </li>
+	    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	        <a href="#">
+	        	<img class="tupian" src="img/nongzhuang001_03.png"/>
+	            <div class="mui-media-body">美景</div>
+	        </a>
+	    </li>
+	    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	        <a href="#">
+	        	<img class="tupian" src="img/nongzhuang_20.png"/>
+	            <div class="mui-media-body">全部</div>
+	        </a>
+	    </li>
+	    </ul>
+	    <!--九宫格结束-->
+	    <div class="fujin">附近农庄</div>
+	    <!--懒加载-->
+	    <ul class="mui-table-view" id="list" style="margin-bottom: .55rem;">
+	        <!--<li class="mui-table-view-cell mui-media lanjiazai">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left tu" src="img/1.png">
+	                <div class="mui-media-body">
+	                     <p class="my_p1">
+	                    	<span class="sp1">意大利社员汇庄园</span>
+	                    	<span class="sp2"></span>
+	                    	<span class="sp3">&nbsp;&nbsp;顺义&nbsp;35千米</span>
+	                    </p>
+	                   <p class="my_p2">我已经变的很美好，你会来看我吗？<br />请来看看吧</p>
+	                    <p class="my_p3"><span class="sp4">骑马</span><span class="sp5">探索</span><span class="sp6">表演</span></p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media lanjiazai">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left tu" src="img/2.png">
+	                <div class="mui-media-body">
+	                     <p class="my_p1">
+	                    	<span class="sp1">意大利社员汇庄园</span>
+	                    	<span class="sp3">&nbsp;&nbsp;顺义&nbsp;35千米</span>
+	                    </p>
+	                    <p class="my_p2">我已经变的很美好，你会来看我吗？<br />请来看看吧</p>
+	                    <p class="my_p3"><span class="sp4">骑马</span><span class="sp5">探索</span><span class="sp6">表演</span></p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media lanjiazai">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left tu" src="img/1.png">
+	                <div class="mui-media-body">
+	                     <p class="my_p1">
+	                    	<span class="sp1">意大利社员汇庄园</span>
+	                    	<span class="sp3">&nbsp;&nbsp;顺义&nbsp;35千米</span>
+	                    </p>
+	                    <p class="my_p2">我已经变的很美好，你会来看我吗？<br />请来看看吧</p>
+	                    <p class="my_p3"><span class="sp4">骑马</span><span class="sp5">探索</span><span class="sp6">表演</span></p>
+	                </div>
+	            </a>
+	        </li>-->
+	    </ul>
+	    <!--底部-->
+	    <nav class="mui-bar mui-bar-tab">
+	        <a class="mui-tab-item mui-active">
+	            <span class="mui-icon"><img src="img/nongzhuang_030.png"/></span>
+	            <span class="mui-tab-label">农庄</span>
+	        </a>
+	        <a class="mui-tab-item" id="huodong">
+	            <span class="mui-icon"><img src="img/nongzhuang_035.png"/></span>
+	            <span class="mui-tab-label">活动</span>
+	        </a>
+	        <a class="mui-tab-item" id="techan">
+	            <span class="mui-icon"><img src="img/nongzhuang_026.png"/></span>
+	            <span class="mui-tab-label">特产</span>
+	        </a>
+	        <a class="mui-tab-item" id="wode" >
+	            <span class="mui-icon"><img src="img/nongzhuang_028.png"/></span>
+	            <span class="mui-tab-label">我的</span>
+	        </a>
+	    </nav>
+	     </div>
+	     <script src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/mui.lazyload.js"></script>
+	<script type="text/javascript" src="js/mui.lazyload.img.js"></script>	
+	<script type="text/javascript" src="js/nongzhuang11.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+</body>
+</html>
+<script type="text/javascript">
+		var slider= mui("#slider");
+		    slider.slider({
+		    	interval:1000
+		    })
+		    document.getElementById("wode").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'yemian/my 9.html'
+			})
+		})
+		    document.getElementById("techan").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'yemian/techan17.html'
+			})
+		})
+		    document.getElementById("huodong").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'yemian/huodong08.html'
+			})
+		})
+</script>

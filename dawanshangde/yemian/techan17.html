@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="description" content="retro flip clock plugin for jQuery.">
+        <meta name="keywords" content="Плагин jQuery, retro часы, flip часы,jQuery, plugin, count down">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/techan17.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery.flipcountdown.css" />
+		<script type="text/javascript" src="../js/jquery-1.7.min.js"></script>
+        <script type="text/javascript" src="../js/quick_links.js"></script>
+		<script type="text/javascript">
+		var html =document.getElementsByTagName('html')[0];
+	    html.style.fontSize = html.clientWidth /3.75 + "px";
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">返回</a>
+		    <h1 class="mui-title">特产首页</h1>
+		    <a href="#sheet" >...</a>
+		</header>
+	 		<div class="mui-content">
+		     <div class="my-div01">
+		    	<div class="mui-input-row mui-search">
+		    	    <input type="search" class="mui-input-clear my-input01" placeholder="请输入农庄名称或特产名称">
+		    	</div>
+		    </div>
+		    
+		     <div class="mui-slider" id="ss">
+	 		    	
+	 		        <div class="mui-slider-group">
+	 		            <div class="mui-slider-item">
+	 		                <a href="#">
+	 		                    <img src="../img/t0115b5cd125fbaf1d1.jpg" style="width: 4.14rem; height: 1.55rem;">
+	 		                </a>
+	 		            </div>
+	 		            <div class="mui-slider-item">
+	 		                <a href="#">
+	 		                    <img src="../img/t01b55948489accbdd2.jpg" style="width: 4.14rem; height: 1.55rem;">
+	 		                </a>
+	 		            </div>
+	 		             <div class="mui-slider-item">
+	 		                <a href="#">
+	 		                    <img src="../img/t01e78d5711b59c3db7.jpg" style="width: 4.14rem; height:1.55rem;">
+	 		                </a>
+	 		            </div>
+	 		            <div class="mui-slider-item">
+	 		                <a href="#">
+	 		                    <img src="../img/t01f682dc056da67ab8.jpg" style="width: 4.14rem; height: 1.55rem;">
+	 		                </a>
+	 		            </div>
+	 		            
+	 		        </div>
+	 		        <!--： 点 -->
+	 		        <div class="mui-slider-indicator">
+	 		            <div class="mui-indicator mui-active"></div>
+	 		            <div class="mui-indicator"></div>
+	 		            <div class="mui-indicator"></div>
+	 		            <div class="mui-indicator"></div>
+	 		        </div>
+	 		    </div>
+	 		    <ul class="gouwuche1" id="ball">
+	        		<li id="shopCart">
+			            <a href="#" class="message_list" >
+			            	<span class="cart_num">0</span>
+			            	<img src="../img/14.png"/>
+			            </a>
+		           </li>
+	 		    </ul>  
+	 		     <div id="flyItem" class="fly_item"></div>  
+ 		     <div id="flyItem" class="fly_item"></div>    
+		    <div class="u_01">
+		    	<a href="javascript:0">
+			    	<div class="li_01">
+			    		<p style="font-size: 0.14rem;color: #2A2A2A;margin-top: 0.07rem;margin-left: 0.14rem;"><a href="miaosha24.html">秒杀</a></p>
+			    		<p style="font-size: 0.12rem;color: #676767;margin-top: 0.02rem;margin-left: 0.14rem;">12点场剩余时间</p>
+			    		<div id="retroclockbox_xs" class="daojishi"></div>
+	 		    		<!--<div id="timer" class="box1_p2">
+	                    	   00:00:00
+	                    </div>-->
+			    		<a href="xiangqing22.html"><img src="../img/19.png"/></a>
+			    	</div>
+		    	</a>
+		    	<div class="li_02">
+		    		<a href="mingpin16.html">
+		    		<p style="font-size: 0.14rem;color: #2A2A2A;margin-top: 0.07rem;margin-left: 0.14rem;">名品</p>
+		    		<p style="font-size: 0.12rem;color: #2A2A2A;margin-top: 0.07rem;margin-left: 0.14rem;">每日精选100款</p>
+		    		<p style="font-size: 0.12rem;color: #4A90E2;margin-top: 0.07rem;margin-left: 0.14rem;">中秋好礼帮你选</p>
+		    	</a>
+		    	</div>
+		    	<div class="li_03">
+		    		<p style="font-size: 0.14rem;color: #2A2A2A;margin-top: 0.07rem;">抽奖</p>
+		    		<p style="font-size: 0.12rem;color: #2A2A2A;margin-top: 0.07rem;">中奖率100%</p>
+		    		<p style="font-size: 0.12rem;color: #F5A623;margin-top: 0.07rem;">现金大奖等你来</p>
+		    	</div>
+		    </div>
+		    	<ul class="liebiao1">
+	 		    	<li>
+	 		    		<p class="box2_p1">阳澄湖大闸蟹</p>
+	 		    		<p class="box2_p2">298元/12只装</p>
+	 		    		<p class="box2_p3"> <img src="../img/21.png"/> </p>
+	 		    	</li>
+	 		    	<li>
+	 		    		<p class="box2_p1" style="color: #417505;">红心火龙果</p>
+	 		    		<p class="box2_p2">298元/12只装</p>
+	 		    		<p class="box2_p3"> <img src="../img/22.png"/> </p>
+	 		    	</li>
+	 		    	<li>
+	 		    		<p class="box2_p1" style="color: #F5A623;">海南牛奶木瓜</p>
+	 		    		<p class="box2_p2">298元/12只装</p>
+	 		    		<p class="box2_p3"> <img src="../img/23.png"/> </p>
+	 		    	</li>
+	 		    </ul>
+		    </div>
+		 <div class="xian"></div>
+	 		   <div class="box3">
+	 		   	    <div class="box3_1">
+	 		   	    	<div class="box3_1_1">
+	 		   	    		<span class="box3_1_span1">肉类蛋类</span><br />
+	 		   	    		 <p class="box3_1_p1">大家都在买</p>
+	 		   	    	</div>
+	 		   	    	<div class="box3_1_2">
+	 		   	    		<img src="../img/24.png"/>
+	 		   	    	</div>
+	 		   	    </div>
+	 		   	     <div class="box3_2">
+	 		   	    	<p class="box3_2_p1">新鲜蔬菜</p>
+	 		   	        <img class="box3_tu1" src="../img/25.png"/>
+	 		   	    </div>
+	 		   	    <div class="box3_3">
+	 		   	    	<p class="box3_2_p1">海鲜水产</p>
+	 		   	        <img class="box3_tu1" src="../img/26.png"/>
+	 		   	    </div>
+	 		   </div>
+	 		   <ul class="box4">
+	 		   		<li>
+	 		   			<p class="box3_2_p1">新鲜水果</p>
+	 		   	        <img class="box3_tu1" src="../img/27.png"/>
+	 		   		</li>
+	 		   		<li>
+	 		   		    <p class="box3_2_p1">精选干货</p>
+	 		   	        <img class="box3_tu1" src="../img/28.png"/>
+	 		   		</li>
+	 		   		<li>
+	 		   		    <p class="box3_2_p1">粮油速食</p>
+	 		   	        <img class="box3_tu1" src="../img/29.png"/>
+	 		   		</li>
+	 		   		<li>
+	 		   		    <p class="box3_2_p1">滋补保健</p>
+	 		   	        <img class="box3_tu1" src="../img/30.png"/>
+	 		   		</li>
+	 		   </ul>
+	 		    <div class="box3">
+	 		   	    <div class="box3_1">
+	 		   	    	<div class="box3_1_1">
+	 		   	    		<span class="box3_1_span1">茶叶</span><br />
+	 		   	    		 <p class="box3_1_p1">春茶热销中</p>
+	 		   	    	</div>
+	 		   	    	<div class="box3_1_2">
+	 		   	    		<img src="../img/31.png"/>
+	 		   	    	</div>
+	 		   	    </div>
+	 		   	     <div class="box3_2">
+	 		   	    	<p class="box3_2_p1">休闲零食</p>
+	 		   	        <img class="box3_tu1" src="../img/32.png"/>
+	 		   	    </div>
+	 		   	    <div class="box3_3">
+	 		   	    	<p class="box3_2_p1">母婴专区</p>
+	 		   	        <img class="box3_tu1" src="../img/33.png"/>
+	 		   	    </div>
+	 		   </div>
+	 		   <div class="xian"></div>
+	 		   <div class="box5">
+	 		   	  <div class="box5_1">
+	 		   	  	 <p class="box5_p1">更多主题</p>
+	 		   	  </div>
+	 		   	   <ul class="liebiao2">
+	 		   	   		<li>
+	 		   	   			<img src="../img/34.png"/>
+	 		   	   			<p class="box5_p2">工艺品</p>
+	 		   	   		</li>
+	 		   	   		<li>
+	 		   	   			<img src="../img/35.png"/>
+	 		   	   			<p class="box5_p2">海外进口</p>
+	 		   	   		</li>
+	 		   	   		<li>
+	 		   	   			<img src="../img/36.png"/>
+	 		   	   			<p class="box5_p2">挑战极限</p>
+	 		   	   		</li>
+	 		   	   </ul>
+	 		   </div>
+	 		   <div class="xian"></div>
+	 		   <div class="box6">
+	 		   	  <div class="box5_1">
+	 		   	  	 <p class="box5_p1">推荐特产</p>
+	 		   	  </div>
+	 		   	  <ul class="liebiao3">
+	 		   	  	 <li>
+	 		   	  	 	<img class="box6_tu1" src="../img/37.png"/>
+	 		   	  	 	<p class="box6_p2">绿皮核桃</p>
+	 		   	  	 	<p class="box6_p3">蘑菇庄园</p>
+	 		   	  	 	<div class="box6_1">
+	 		   	  	 		<p class="box6_p4">
+	 		   	  	 		    <span class="box6_span1">&yen;</span>
+	 		   	  	 		    <span class="box6_span2">13.</span>  
+	 		   	  	 		    <span class="box6_span3">9</span>
+	 		   	  	 		</p>
+	 		   	  	 		 <a href="javascript:;" class="add_cart_large btnCart"><img  class="box6_tu2" src="../img/14.png"/></a>
+	 		   	  	 	</div>
+	 		   	  	 </li>
+	 		   	  	 <li>
+	 		   	  	 	<img class="box6_tu1" src="../img/38.png"/>
+	 		   	  	 	<p class="box6_p2">手工薰衣草皂</p>
+	 		   	  	 	<p class="box6_p3">薰衣草庄园</p>
+	 		   	  	 	<div class="box6_1">
+	 		   	  	 		<p class="box6_p4">
+	 		   	  	 		    <span class="box6_span1">&yen;</span>
+	 		   	  	 		    <span class="box6_span2">13.</span>  
+	 		   	  	 		    <span class="box6_span3">9</span>
+	 		   	  	 		</p>
+	 		   	  	 		 <a href="javascript:;" class="add_cart_large btnCart"><img  class="box6_tu2" src="../img/14.png"/></a>
+	 		   	  	 		
+	 		   	  	 	</div>
+	 		   	  	 </li>
+	 		   	  	 <li>
+	 		   	  	 <img class="box6_tu1" src="../img/39.png"/>
+	 		   	  	 	<p class="box6_p2">桂花乌龙茶</p>
+	 		   	  	 	<p class="box6_p3">蘑菇庄园</p>
+	 		   	  	 	<div class="box6_1">
+	 		   	  	 		<p class="box6_p4">
+	 		   	  	 		    <span class="box6_span1">&yen;</span>
+	 		   	  	 		    <span class="box6_span2">13.</span>  
+	 		   	  	 		    <span class="box6_span3">9</span>
+	 		   	  	 		</p>
+	 		   	  	 		 <a href="javascript:;" class="add_cart_large btnCart"><img  class="box6_tu2" src="../img/14.png"/></a>
+	 		   	  	 	</div>
+	 		   	  	 </li>
+	 		   	  </ul>
+	 		   </div>    
+		</div>
+		<nav class="mui-bar2 mui-bar-tab">
+		    <a class="mui-tab-item mui-active" id="nongzhang">
+		    <img src="../img/42.png"/><br />
+		       	<span class="mui-tab-label">农庄</span>
+		    </a>
+		    <a class="mui-tab-item" id="huodong">
+		        <img src="../img/43.png"/><br />
+		        <span class="mui-tab-label">活动</span>
+		    </a>
+		    <a class="mui-tab-item" >
+		        <img src="../img/40.png"/><br />
+		        <span class="mui-tab-label">特产</span>
+		    </a>
+		    <a class="mui-tab-item" id="wode" >
+		    	<img src="../img/41.png"/><br />
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+	
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+				<script src="js/mui.min.js"></script>
+		<!--倒计时-->
+		<!--<script language="javascript" type="text/javascript">  
+			  function Timer(year,month,day,hour,minute,second){ 
+			  var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date()); //计算剩余的毫秒数 
+			  var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数 
+			  var hours = parseInt(leftTime / 1000 / 60 / 60 % 5 , 10); //计算剩余的小时 
+			  var minutes = parseInt(leftTime / 1000 / 60 % 2, 10);//计算剩余的分钟 
+			  var seconds = parseInt(leftTime / 1000 % 62, 10);//计算剩余的秒数 
+			  days = checkTime(days); 
+			  hours = checkTime(hours); 
+			  minutes = checkTime(minutes); 
+			  seconds = checkTime(seconds); 
+			  setInterval("Timer(2019,00,00,00,00,00)",1000); 
+			 // console.log(days);
+			  if (isNaN(days)) { }
+			  else{
+			   
+			  	 document.getElementById("timer").innerHTML = hours+":" + minutes+":"+seconds; 
+			  }
+			  
+			} 
+			function checkTime(i){ //将0-9的数字前面加上0，例1变为01 
+			  if(i<10) 
+			  { 
+			    i = "0" + i; 
+			  } 
+			  return i; 
+			} 
+		</script>-->
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+       <script type="text/javascript" src="../js/jquery.flipcountdown.js"></script>
+       <script type="text/javascript">
+
+//			$(function(){
+//			
+//				var i = 1000;
+//			
+//				$('#retroclockbox1').flipcountdown();
+//			
+//				var i = 1;
+//			
+//				$('#retroclockbox_counter').flipcountdown({
+//			
+//					tick:function(){
+//			
+//						return i++;
+//					}
+//				});
+//			
+//				$('#retroclockbox2').flipcountdown({showHour:false,showMinute:false,showSecond:true});
+//			
+//				$('#retroclockbox3').flipcountdown({tzoneOffset:3,showSecond:false});
+//			
+//				$('#retroclockbox4').flipcountdown({am:true});
+//			
+//				$('#retroclockbox5').flipcountdown({speedFlip:50});
+//			
+//				$('#retroclockbox6').flipcountdown({tick:function(){
+//			
+//					return new Date('5/10/2012 12:34:23');
+//			
+//				}});
+//			
+//			})
+//
+//</script>
+<script>
+//
+//$(function(){
+//
+//	$('#retroclockbox_lg').flipcountdown({size:'lg'});
+//
+//	$('#retroclockbox_md').flipcountdown({size:'md'});
+//
+//	$('#retroclockbox_sm').flipcountdown({size:'sm'});
+//	$('#retroclockbox_xs').flipcountdown({size:'xs'});
+//
+//})
+//
+//</script>
+<script src="js/float-drag.js"></script>
+<script>
+	document.getElementById("wode").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'my 9.html'
+			})
+		})
+	document.getElementById("huodong").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'huodong08.html'
+			})
+		})
+	document.getElementById("nongzhang").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'../index.html'
+			})
+		})
+
+//  new FloatDrag(document.getElementById('ball'), {
+//
+//      edge: {
+//
+//          right: 10,
+//
+//          bottom: 10,
+//
+//      }
+//
+//  });
+//
+//</script>
+<script type="text/javascript" src="js/parabola.js"></script>
+<script type="text/javascript">
+//	$(".quick_links_panel li").mouseenter(function(){
+//		$(this).children(".mp_tooltip").animate({left:-92,queue:true});
+//		$(this).children(".mp_tooltip").css("visibility","visible");
+//		$(this).children(".ibar_login_box").css("display","block");
+//	});
+//	$(".quick_links_panel li").mouseleave(function(){
+//		$(this).children(".mp_tooltip").css("visibility","hidden");
+//		$(this).children(".mp_tooltip").animate({left:-121,queue:true});
+//		$(this).children(".ibar_login_box").css("display","none");
+//	});
+//	$(".quick_toggle li").mouseover(function(){
+//		$(this).children(".mp_qrcode").show();
+//	});
+//	$(".quick_toggle li").mouseleave(function(){
+//		$(this).children(".mp_qrcode").hide();
+//	});
+//// 元素以及其他一些变量
+//var eleFlyElement = document.querySelector("#flyItem"), eleShopCart = document.querySelector("#shopCart");
+//var numberItem = 0;
+//// 抛物线运动
+//var myParabola = funParabola(eleFlyElement, eleShopCart, {
+//	speed: 400, //抛物线速度
+//	curvature: 0.0008, //控制抛物线弧度
+//	complete: function() {
+//		eleFlyElement.style.visibility = "hidden";
+//		eleShopCart.querySelector("span").innerHTML = ++numberItem;
+//	}
+//});
+//// 绑定点击事件
+//if (eleFlyElement && eleShopCart) {
+//	[].slice.call(document.getElementsByClassName("btnCart")).forEach(function(button) {
+//		button.addEventListener("click", function(event) {
+//			// 滚动大小
+//			var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+//			    scrollTop = document.documentElement.scrollTop || document.body.scrollTop || 0;
+//			eleFlyElement.style.left = event.clientX + scrollLeft + "px";
+//			eleFlyElement.style.top = event.clientY + scrollTop + "px";
+//			eleFlyElement.style.visibility = "visible";
+//			// 需要重定位
+//			myParabola.position().move();			
+//		});
+//	});
+//}
+
+</script>
+	</body>
+
+</html>

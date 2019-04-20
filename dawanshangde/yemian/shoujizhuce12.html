@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>手机号注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min11.css" rel="stylesheet" />
+		<style type="text/css">
+			html{
+				background: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background: #000000;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #FFFFFF;"><span style="font-size:20px ;">返回</span></a>
+			<h1 class="mui-title"><span style="color: #FFFFFF;font-size: 20px;" >手机号注册</span></h1>
+			<a href="#sheet" id="openSheet"><p><img src="../img/preview/huodng01/huodong/huodng03_01.jpg" / style="float: right; padding-top: 4px;"></p></a>
+		</header>
+		<div class="mui-content" style="background: #FFFFFF;">
+		    <ul class="mui-table-view">
+		            <li class="mui-table-view-cell" style="height: 32px;border-bottom: 1px solid #CCCCCC;padding-bottom: 30px;">
+		             	<p style="font-size: 14px;color: #8B8B8B;">请输入手机135****4234收到的短信校验码</p> 
+		            </li>
+		    </ul>
+		    <div class="mui-input-row" style="border-bottom: 1px solid #CCCCCC;">
+		       
+		        <input  style="float: left;font-size: 15px;color:#222222;margin-top: 10px;" type="text" placeholder="12345">
+		        <button type="button" class="mui-btn mui-btn-blue" style="float: left;background: #FFFFFF;color: #242424;border: 1px solid #C2C2C2;border-radius: 4px;margin-top: 15px;">获取校验码</button>
+		    </div>
+					<div class="mui-input-row" style="border-bottom: 1px solid #CCCCCC;">
+					    
+					    <input type="text" placeholder="请输入密码(6-20为英文和数字组合)" style="font-size: 14px;color: #8B8B8B;width: 100%;margin-top: 10px;">
+					</div>
+			<!--<button type="button" class="mui-btn mui-btn-blue mui-btn-block">按钮</button>-->
+			 <button type="button" class="mui-btn mui-btn-blue mui-btn-block" style="background: #FFDB25;border-radius: 4px;border-style: none;"><span style="font-size: 16px;color: #8B572A;">下一步</span></button>
+		</div>
+		
+		<div id="sheet" class="mui-popover mui-popover-bottom mui-popover-action ">
+		    <!-- 可选择菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#">分享到微信</a>
+		      </li>
+		      <li class="mui-table-view-cell">
+		        <a href="#">分享到QQ空间</a>
+		      </li>
+		    </ul>
+		    <!-- 取消菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="shoujizhuce12.html"><b>取消</b></a>
+		      </li>
+		    </ul>
+		</div>
+		
+		
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

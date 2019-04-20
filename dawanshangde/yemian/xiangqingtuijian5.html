@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>农庄-详情推荐</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/xiangqingtuijian5.css"/>
+		<script type="text/javascript">
+			var html =document.getElementsByTagName('html')[0];
+		    html.style.fontSize = html.clientWidth /3.75 + "px"; 
+	    </script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">返回</a>
+		    <h1 class="mui-title">蘑菇农庄</h1>
+		    <p class="my_p">...</p>
+        </header>
+        <div class="mui-content">
+		<div class="box1">
+		   <p class="my_p1">意大利小镇<span id="btn" class="zan" href=""><img id="img" src="../img/xinxing_03.png"/></span></p>
+		   <p class="my_p2">我已经变的很美好，你会来看我吗</p> 
+		</div>
+		<div class="box2">
+			<span class="sp0"><img src="../img/xiangqing_06.png"/></span>
+			<span class="sp1">庄主：香香的幸福生活</span>
+			<span class="sp2"><img src="../img/xiangqing_03.png"/></span>
+		</div>
+		<div class="box2">
+			<span class="sp0"><img src="img/xiangqing_11.png"/></span>
+			<span class="sp1">朝阳区望京soho塔1，A座0909</span>
+			<span class="sp3"><img src="../img/xiangqing_14.png"/></span>
+		</div>
+		<div class="box3">
+			<h4>农庄故事</h4>
+			<h5>ABOUT</h5>
+		    <p class="p1">我们心目中理想的地方<br />天要阔，山要高，水要深，酒要醇，菜色香<br />人要美，谈笑相得，丝竹不绝……<br />让我们在城市尽头找回失落已久的存在感。</p>
+		    <div class="xiaohe1"><img src="../img/xiangqing_19.png"/></div>
+		    <p class="p2">庄主张教授退休，两年前购地五十亩；<br />携妻定居<br />亲手搭建庄中一砖一瓦<br />植下一草一木<br />养驽马一匹<br />鸡鸭若干<br />读书、骑马、种田<br />弹琴、待客、喝酒<br />余生足以<br />夫人性极温和，精于厨艺，尤擅烧肉</p>
+		    <div class="xiaohe1"><img src="../img/xiangqing_21.png"/></div>
+		    <p class="p2">若夜月无雨<br />天朗气清<br />庄主喜置篝火<br />邀宾客友人席地而坐</p>
+		    <div class="xiaohe1"><img src="../img/xiangqing_23.png"/></div>
+		</div>
+		<div class="box4">
+			<p class="p3">来过、爱过、留下过足迹...</p>
+			<p class="p4">共有2345条评论</p>
+			<p class="p5">
+				<img src="../img/xiangqing_25.png"/>
+				<img src="../img/xiangqing_27.png"/>
+				<img src="../img/xiangqing_29.png"/>
+				<img src="../img/xiangqing_31.png"/>
+				<img src="../img/xiangqing_33.png"/>
+				<a href=""><img src="../img/xiangqing_35.png"/></a>
+			</p>
+			<a href="">
+			    <button class="anniu">
+					<span class="s1"><img src="../img/xingqing0010_03.png"/></span>
+					<span class="s2">我要评论</span>
+			    </button>
+			</a>    
+		</div>
+		<div class="box5">
+			<p class="p6">相似农庄</p>
+			<ul class="nongzhuang">
+				<li>
+					<img src="../img/xiangqing_43.png"/>
+					<p>薰衣草庄园</p>
+				</li>
+				<li>
+					<img src="../img/xiangqing_45.png"/>
+					<p>意大利社员汇庄园</p>
+				</li>
+				<li>
+					<img src="../img/xiangqing_47.png"/>
+					<p>意大利庄园</p>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active" id="techan" >
+		        <span class="mui-icon"><img src="../img/xiangqing_53.png"/></span>
+		        <span class="mui-tab-label">特产</span>
+		    </a>
+		    <a class="mui-tab-item"  id="shisu">
+		        <span class="mui-icon"><img src="../img/xiangqing_56.png"/></span>
+		        <span class="mui-tab-label">食宿</span>
+		    </a>
+		    <a class="mui-tab-item" id="huodong">
+		        <span class="mui-icon"><img src="../img/xiangqing_59.png"/></span>
+		        <span class="mui-tab-label">活动</span>
+		    </a>
+		</nav>
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>
+<script>       
+	window.onload=function(){        
+	var Imgbtn=document.getElementById('btn');        
+	var Img=document.getElementById('img'); 
+	Imgbtn.onclick=function(){            
+	if(Img.src=='img/xinxing_03.png'){             
+	Img.src="img/xinxing_03.png";          
+	}else{                    
+	Img.src="img/duig_07.png";  
+		}            
+	}           
+}    
+</script> 
+<script type="text/javascript">
+		document.getElementById("techan").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'techan17.html'
+			})
+		})
+		document.getElementById("shisu").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'shisu25.html'
+			})
+		})
+
+		document.getElementById("huodong").addEventListener('tap',function(){
+			mui.openWindow({
+				url:' huodong08.html'
+			})
+		})
+	</script>

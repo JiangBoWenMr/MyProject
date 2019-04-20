@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>评论</title>
+		<style type="text/css">
+			#fileBox{
+			margin:/*1*/rem 0;
+		} 
+		#fileBox label{
+			border: 1px solid #ccc;
+			display:block;
+			float:left;
+			height:60px;
+			width:60px;
+			background:url(../img/xiangqing_03.png) no-repeat center;
+			background-size: .7rem;
+			background-color: #ccc;
+			margin-left: .17rem;
+			
+		} 
+		#fileBox .file-btn{
+			height:50px;
+			width:50px;
+			margin:0 .5rem .5rem 0;opacity:0;
+		} 
+		#fileBox .review-box{
+			display:block;
+			float:left;
+			margin-left: .17rem;
+		} 
+		#fileBox .review-box img{
+			height:60px;
+			width:60px;
+			margin:0 .1rem .2rem 0;
+		} 
+		#fileBox .prev-item{
+			position:relative;display:inline-block;
+		} 
+		#fileBox .prev-item .closebtn{
+			position:absolute;
+			right: -1px;
+			top: -4px;
+			display: block;
+			height: 14px;
+			width: 14px;
+			color: #fff;
+			font-size: 16px;
+			line-height:14px;
+			text-align: center;
+			background: red;
+			border-radius: 10px;
+		}
+		#fileBox .prev-item .closebtn {
+			position: absolute;
+			right: 7px; 
+			top: -4px;
+			display: block;
+			height: 14px;
+			width: 14px;
+			color: #fff;
+			font-size: 16px;
+			line-height: 14px;
+			text-align: center;
+			background: #8E8E93;
+			border-radius: 10px;
+		}
+
+		</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />	
+		<link rel="stylesheet" href="../css/reset.css" />
+		<script>
+			var html = document.getElementsByTagName('html')[0];
+			html.style.fontSize = html.clientWidth / 3.75 + "px";
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background: #000000;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #FFFFFF;"><span style="font-size:18px ;">返回</span></a>
+			<h1 class="mui-title"><span style="color: #FFFFFF;font-size: 20px">评论</span></h1>
+			<a href="#sheet" id="openSheet" ><p><img src="../img/preview/huodng01/huodong/huodng03_01.jpg" / style="float: right; padding-top: 17px;"></p></a>
+		</header>
+	
+	<div class="mui-content">
+	   <!-- <textarea cols="5" rows="3" class="qq-text">请输入新签名</textarea>-->
+	   <div class="mui-input-row" style="margin: 10px 5px;">
+					<textarea id="textarea" rows="5" placeholder="为适应信息行业正在发生的革命性变化，华为围绕客户需求和技术领先持续创新，与业界伙伴开放合作，聚焦构筑面向未来的信息管道，持续为客户和全社会创造价值。"></textarea>
+				</div>
+		
+		
+		
+		<div class="file-box clearboth" id="fileBox">
+	 				<label class="clone-dom" style="display:none;">
+	 					<input type="file" class="file-btn" name="img[]"/>
+	 				</label> 
+	 					<div class="review-box"></div> 
+	 					<label><input type="file" class="file-btn clone-dom" name="img[]"/>
+					</label> 
+			 </div> 	
+	</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>
+<script type="text/javascript" src="../js/jquery-1.12.4.js">
+	
+</script>
+<script type="text/javascript">
+			  //获取文件url
+            function createObjectURL(blob){
+                if (window.URL){
+                    return window.URL.createObjectURL(blob);
+                } else if (window.webkitURL){
+                    return window.webkitURL.createObjectURL(blob);
+                } else {
+                    return null;
+                }
+            }
+
+            var box = $("#fileBox .review-box");    //显示图片box
+            var file = $("#file"); //file对象
+            var domFragment =  document.createDocumentFragment();   //文档流优化多次改动dom
+
+            $("#fileBox").on("click", ".file-btn",function(){
+                var index = $(this).parent().index();
+                if(index == 6){
+                    alert("最多可以上传4张图片！");
+                    return false;
+                }
+            });
+            //触发选中文件事件
+            $("#fileBox").on("change", ".file-btn", function(event){
+                var imgNum = parseInt($("#fileBox .review-box img").length);
+                if(imgNum < 4){
+                    var file = event.target.files;  //获取选中的文件对象
+                    var imgTag = $("<img src=''/>");
+                    var fileName = file[0].name;    //获取当前文件的文件名
+                    var url = createObjectURL(file[0]); //获取当前文件对象的URL
+                    //忽略大小写
+                    var jpg = (fileName.indexOf(".jpg") > -1) || (fileName.toLowerCase().indexOf(".jpg") > -1);
+                    var png = (fileName.indexOf(".png") > -1) || (fileName.toLowerCase().indexOf(".png") > -1);
+                    var jpeg = (fileName.indexOf(".jpeg") > -1) || (fileName.toLowerCase().indexOf(".jpeg") > -1);
+                    var jpeg = (fileName.indexOf(".gif") > -1) || (fileName.toLowerCase().indexOf(".gif") > -1);
+					var jpeg = (fileName.indexOf(".bmp") > -1) || (fileName.toLowerCase().indexOf(".bmp") > -1);
+                    //判断文件是否是图片类型
+                    if(jpg || png || jpeg || gif || bmp){
+                        imgTag.attr("src",url);
+                    }else{
+                        alert("请选择合适的图片类型文件！");
+                    }
+
+                    //最佳显示
+                    var imgbox = $("<div class='prev-item'><span class='closebtn'>×</span></div>");
+                    imgbox.append(imgTag);
+                    box.append(imgbox);
+                    event.target.parentNode.style.display = "none";
+                    var cloneDom = $(".clone-dom").eq(0).clone().removeAttr("style");
+                    $("#fileBox").append(cloneDom);
+                }
+            });
+
+            $(".review-box").on("click", ".prev-item", function(){
+                var index = $(this).index();
+                $(this).remove();
+                $("#fileBox label:eq(" + (index + 1) + ")").remove();
+            });
+        </script>

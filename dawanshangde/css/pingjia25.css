@@ -1,0 +1,141 @@
+ody{
+	background: white;
+	font-family:"新宋体";
+}
+.mui-bar{
+	background: black;
+}
+.mui-bar .mui-action-back{
+	font-size: .12rem;
+	color: white;
+	margin-top: .06rem;
+}
+.mui-bar .mui-title{
+	font-size: .2rem;
+	color: white;
+}
+.a_01{
+	font-size: 0.4rem;
+	color: white;
+	float: right;
+}
+.mui-bar a{
+	text-decoration: none;
+}
+.mui-content{
+	background: white;
+}
+.biaotilan{
+	width: 100%;
+	height: 0.6rem;
+	background: white;
+	overflow: hidden;
+	border-bottom: 0.02rem solid #F6F6F6;
+}
+.biaotilan ul{
+	height: 0.3rem;
+	width: 3.71rem;
+	padding-top: 0.18rem;
+	margin-left: 0.43rem;
+}
+.biaotilan ul li{
+	float: left;
+	width: 0.6rem;
+	height: 0.4rem;
+	margin-right: 0.2rem;
+	text-align: center;
+}
+.biaotilan ul li:nth-child(4){
+	border-bottom: 0.03rem solid #FFDB25;
+}
+.biaotilan ul li a{
+	font-size: 0.16rem;
+	color: black;
+	text-decoration: none;
+}
+.mui-content ul {
+	margin-top: 0.15rem;
+	margin-left: 0.14rem;
+}
+.mui-content ul li{
+	float: left;
+}
+.mui-content ul li div{
+	width: 1rem;
+	height: 0.38rem;
+	padding-top: 0.08rem;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #8B572A;
+	border-radius: .05rem;
+}
+.box_01{
+	height: 2.44rem;
+	width: 100%;
+	margin-top: 0.7rem;
+	padding-left: 0.14rem;
+	border-bottom: 0.02rem solid gainsboro;
+}
+.box_01 span{
+	font-size: 0.14rem;
+	color: #8B8B8B;
+	position: relative;
+	top: -0.08rem;
+}
+.box_01 p{
+	font-size: 0.14rem;
+	color: #2A2A2A;
+	margin-bottom: 0.1rem;
+}
+.box_02{
+	margin-left: 0.14rem;
+	width: 3.2rem;
+	height: 0.5rem;
+	background: #E9E9E9;
+	padding-left: 0.3rem;
+}
+.box_03{
+	height: 2.34rem;
+	width: 100%;
+	padding-left: 0.14rem;
+	padding-top: 0.2rem;
+}
+.box_03 p{
+	font-size: 0.14rem;
+	color: #2A2A2A;
+	margin-bottom: 0.1rem;
+}
+.box_04{
+	width: 100%;
+	height: 0.48rem;
+}
+.box_04 a{
+	display: block;
+	float: left;
+}
+.box_04 a:nth-child(1){
+	width: 1rem;
+	height: 0.48rem;
+	background: #F6F6F6;
+	text-decoration: none;
+}
+.box_04 a:nth-child(2){
+	width: 1.39rem;
+	height: 0.48rem;
+	background: yellow;
+	padding-top: 0.13rem;
+	text-align: center;
+	font-size: 0.16rem;
+	color: #8B572A;
+	text-decoration: none;	
+}
+.box_04 a:nth-child(3){
+	width: 1.35rem;
+	height: 0.48rem;
+	background: red;
+	padding-top: 0.13rem;
+	text-align: center;
+	font-size: 0.16rem;
+	color: white;
+	text-decoration: none;
+}

@@ -1,0 +1,99 @@
+.mui-bar{
+	background: black;
+}
+.mui-bar .mui-action-back{
+	color: white;
+	font-size: .12rem;
+	margin-top: .07rem;
+}
+.mui-bar .mui-title{
+	color: white;
+	font-size: .16rem;
+}
+.mui-bar .my_p{
+	color: white;
+	text-align: right;
+	font-size: .36rem;
+}
+.sousuo{
+	width: 100%;
+	height: .4rem;
+	background: #ffdb25;
+	padding-top: .03rem;
+}
+.sou1{
+	width: 90%;
+	margin: 0 auto;
+}
+.inp{
+	background: #FFFFFF;
+}
+.mui-input-clear{
+	background: white;
+}
+.mui-slider-item img{
+	width: 100%;
+	height: 1.7rem;
+}
+.mui-table-view-cell .tupian{
+	width: .55rem;
+	height: .55rem
+}
+.lanjiazai a .tu{
+	line-height: .42rem;
+	/*max-width: 1.35rem;*/
+	height: .9rem;
+	width: 1.2rem;
+}
+.my_p1 .sp1{
+	font-size: .14rem;
+	color: #2A2A2A;
+}
+.my_p1 .sp3{
+	margin-left: .1em;
+	background: url(../img/nongzhuang_023.png) no-repeat;
+	background-size: .1rem .12rem;
+	font-size: .12rem;
+	color: #676767;
+	margin-left: .1rem;
+}
+.my_p2{
+	margin-top: .1rem;
+	font-size: .12rem;
+	color: #8B8B8B;
+	line-height: .15rem;
+}
+.my_p3{
+	margin-top: .1rem;
+	font-size: .12rem;
+}
+.sp4,.sp5,.sp6{
+	display: block;
+	float: left;
+	width: .34rem;
+	height: .18rem;
+	margin-right: .1rem;
+	background: #E9E9E9;
+	text-align: center;
+	border-radius: .03rem;	
+}
+.fujin{
+	width: 100%;
+	height: .36rem;
+	background: #E9E9E9;
+	line-height: .36rem;
+	font-size: .16rem;
+	color: #2A2A2A;
+	margin-bottom: .13rem;
+}
+.mui-table-view .mui-media-object{
+	width: 1.2rem;
+	height: .95rem;
+}
+.mui-icon img{
+	width: .25rem;
+	height: .25rem;
+}
+.mui-bar-tab{
+	background: #FFFFFF;
+}

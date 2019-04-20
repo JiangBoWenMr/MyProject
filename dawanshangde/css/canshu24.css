@@ -1,0 +1,87 @@
+.mui-bar{
+	background: black;
+}
+.mui-bar .mui-action-back{
+	font-size: .12rem;
+	color: white;
+	margin-top: .06rem;
+}
+.mui-bar .mui-title{
+	font-size: .2rem;
+	color: white;
+}
+.mui-bar a:last-child{
+	font-size: 0.4rem;
+	color: white;
+	float: right;
+	text-decoration: none;
+}
+.mui-bar a{
+	text-decoration: none;
+}
+.mui-content{
+	background: white;
+}
+.biaotilan {
+	width: 100%;
+	height: 0.43rem;
+	border-bottom: 0.02rem solid #D4D4D4;
+}
+.biaotilan ul li{
+	float: left;
+	display: block;
+	width: 0.6rem;
+	height: 0.41rem;
+	margin-left:0.1rem;
+	text-align: center;
+	padding-top: 0.05rem;
+}
+.biaotilan ul li:nth-child(3){
+	border-bottom: 0.03rem solid #FFDB25;
+}
+.biaotilan ul li a{
+	font-size: 0.16rem;
+	color: #2A2A2A;
+	text-decoration: none;
+}
+.zi{
+	width: 100%;
+	height: 5.82rem;
+	padding-top: 0.2rem;
+	background: white;
+}
+.zi p{
+	font-size: 0.16rem;
+	color: #2A2A2A;
+	margin-left: 0.4rem;
+}
+.dibu{
+	width: 100%;
+	height: 0.48rem;
+}
+.dibu ul li{
+	float: left;
+	padding-top: 0.12rem ;
+	text-align: center;
+}
+.dibu ul li:nth-child(1) {
+	display: block;
+	width: 25%;
+	height: 0.48rem;
+	background: #F6F6F6;
+}
+.dibu ul li:nth-child(2) {
+	display: block;
+	width: 34%;
+	height: 0.48rem;
+	background:#FFDB25;
+}
+.dibu ul li:nth-child(3) {
+	display: block;
+	width: 41%;
+	height: 0.48rem;
+	background:#D0021B;
+}
+.dibu ul li a{
+	text-decoration: none;
+}

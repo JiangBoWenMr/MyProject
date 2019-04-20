@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的资料</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/my.css" />
+		<link rel="stylesheet" type="text/css" href="../css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<script type="text/javascript">
+			var html = document.getElementsByTagName('html')[0];
+			html.style.fontSize = html.clientWidth / 3.75 + "px";
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="../index.html"><span class="my_span1">返回</span></a>
+			<span class="mui-title">我的</span>
+			<a href="javascript:0">
+				<ul class="my_ul1">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</a>
+		</header>
+		<div class="mui-content">
+		    <div class="mui-inner">
+		    	<a href="gerenziliao 10.html"><img src="../img/wd01.gif" class="img-00"/></a>
+		    </div>
+		    <div class="mui-inner01">
+		    	<span id="">
+		    		冯安妮店铺
+		    		<img src="../img/wd02.png" class="img-01"/>
+		    	</span>
+		    </div>
+		</div>
+	<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="wodedingdan 32.html">
+						<img src="../img/wd03.png"/>
+						<lable>我的订单</lable>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="gouwuche29.html">
+						<img src="../img/wd04.png"/>
+						<lable>我的购物车</lable>
+					</a>
+				</li>			
+	            <li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="my_guanzhu 33.html">
+						<img src="../img/wd05.png"/>
+						<lable>我的关注</lable>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img src="../img/wd06.png"/>
+						<lable>系统消息</lable>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="my_yhq 35.html">  
+						<img src="../img/wd07.png"/>
+						<lable>我的优惠券</lable>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="my_shouhuodizhi 36.html">
+						<img src="../img/wd04.png"/>
+						<lable>我的收货地址</lable>
+					</a>
+				</li>
+	
+	</ul>
+	<nav class="mui-bar-1 mui-bar-tab">
+	    <a class="mui-tab-item mui-active" id="nongzhang">
+	      <img src="../img/wd08.png"/>
+	        <p class="mui-tab-label">农庄</p>
+	    </a>
+	    <a class="mui-tab-item mui-active" id="huodong">
+	        <img src="../img/wd09.png"/>
+	        <p class="mui-tab-label">活动</p>
+	    </a>
+	    <a class="mui-tab-item mui-active" id="techan" >
+	        <img src="../img/wd10.png"/>
+	        <p class="mui-tab-label">特产</p>
+	    </a>
+	    <a class="mui-tab-item mui-active" id="nongzhang"  >
+	       <img src="../img/wd11.png"/>
+	        <p class="mui-tab-label">我的</p>
+	    </a>
+	</nav>
+	</body>
+	<script type="text/javascript">
+		document.getElementById("techan").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'techan17.html'
+			})
+		})
+		document.getElementById("huodong").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'huodong08.html'
+			})
+		})
+
+		document.getElementById("nongzhang").addEventListener('tap',function(){
+			mui.openWindow({
+				url:'../index.html'
+			})
+		})
+	</script>
+</html>

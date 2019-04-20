@@ -1,0 +1,29 @@
+.mui-bar{
+	background: black;
+}
+.mui-bar .mui-action-back{
+	font-size: .12rem;
+	color: white;
+	margin-top: .06rem;
+}
+.mui-bar .mui-title{
+	font-size: .2rem;
+	color: white;
+}
+.mui-bar a:last-child{
+	font-size: 0.4rem;
+	color: white;
+	float: right;
+	text-decoration: none;
+}
+.mui-bar a{
+	text-decoration: none;
+}
+.mui-content{
+	background: white;
+}
+.mui-table-view-cell{
+	width: 100%;
+	height: 1.9rem;
+	margin-bottom: 0.1rem;
+}
